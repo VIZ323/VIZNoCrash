@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'VIZNoCrash'
-  s.version          = '0.1.0'
+  s.version          = '0.1.4'
   s.summary          = 'A short description of VIZNoCrash.'
 
 # This description is used to generate tags and improve search results.
