@@ -1,0 +1,22 @@
+{
+  "name": "VIZNoCrash",
+  "version": "0.1.0",
+  "summary": "A short description of VIZNoCrash.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/VIZ323/VIZNoCrash",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "VIZ323": "18515164792@163.com"
+  },
+  "source": {
+    "git": "https://github.com/VIZ323/VIZNoCrash.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "VIZNoCrash/Classes/**/*"
+}

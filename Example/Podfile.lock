@@ -1,0 +1,16 @@
+PODS:
+  - VIZNoCrash (0.1.0)
+
+DEPENDENCIES:
+  - VIZNoCrash (from `../`)
+
+EXTERNAL SOURCES:
+  VIZNoCrash:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  VIZNoCrash: 99636a016944c63adc16b9a0771a935de86eae1a
+
+PODFILE CHECKSUM: d40a4b91f3730cd9826a5ac1c8f0fb6ce7940bdb
+
+COCOAPODS: 1.6.1

@@ -1,0 +1,6 @@
+framework module Pods_VIZNoCrash_Example {
+  umbrella header "Pods-VIZNoCrash_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,12 +7,14 @@
 //
 
 #import "VIZAppDelegate.h"
+#import "VIZNoCrash.h"
 
 @implementation VIZAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [VIZNoCrash beiginNoCrash];
     return YES;
 }
 

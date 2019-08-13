@@ -7,6 +7,7 @@
 //
 
 #import "VIZViewController.h"
+#import "VIZNoCrash.h"
 
 @interface VIZViewController ()
 
@@ -18,6 +19,30 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)testAttribute{
+    
+    NSAttributedString *str = [[NSAttributedString alloc] init];
+    [str attributedSubstringFromRange:NSMakeRange(100, 100)];
+}
+
+- (void)testMutableAttribute{
+    
+    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] init];
+    [str attributedSubstringFromRange:NSMakeRange(100, 100)];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    
+    [self testAttribute];
+    
+    [self testMutableAttribute];
+    
+    NSString *str = [UIImage new];
+    [str intValue];
+    
 }
 
 - (void)didReceiveMemoryWarning
