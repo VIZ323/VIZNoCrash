@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)beiginNoCrash;
 
-//+ (void)beiginNoCrashWithBuglyKey:(NSString *)buglyKey;
++ (void)beiginNoCrashWithBuglyKey:(NSString *)buglyKey;
 
 @end
 

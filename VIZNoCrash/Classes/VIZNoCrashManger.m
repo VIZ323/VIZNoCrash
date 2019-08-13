@@ -9,7 +9,7 @@
 #import <objc/runtime.h>
 #import "NSArray+VIZNoCrash.h"
 #import "NSDictionary+VIZNoCrash.h"
-//#import <Bugly/Bugly.h>
+#import <Bugly/Bugly.h>
 
 @implementation VIZNoCrashManger
 
@@ -100,7 +100,7 @@ static NSInteger errornum = 0;
     NSString *errorPlace = [NSString stringWithFormat:@"Error  Place: %@",mainCallStackSymbolMsg];
     NSString *allErrorMessage = [NSString stringWithFormat:@"%@\n%@\n%@\n%@\n",errorPlace,errorName,errorReason,errorResult];
 //    [Bugly reportException:exception];
-//    [Bugly reportError:[NSError errorWithDomain:exception.name code:errornum userInfo:@{@"allErrorMessage":allErrorMessage,@"exception":exception}]];
+    [Bugly reportError:[NSError errorWithDomain:exception.name code:errornum userInfo:@{@"allErrorMessage":allErrorMessage,@"exception":exception}]];
     NSLog(@"\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n错误 %ld信息如下\n%@\n%@\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n错误 %ld信息结束",errornum,kShenShou,allErrorMessage,errornum);
     errornum ++;
 }
@@ -149,11 +149,11 @@ static NSInteger errornum = 0;
     return mainCallStackSymbolMsg;
 }
 
-//+ (void)startBugly:(NSString *)buglyKey{
-//    
-//    [Bugly startWithAppId:buglyKey];
-//    
-//}
++ (void)startBugly:(NSString *)buglyKey{
+    
+    [Bugly startWithAppId:buglyKey];
+    
+}
 
 
 - (void)objectNoSelectorCrash{

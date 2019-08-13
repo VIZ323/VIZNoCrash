@@ -14,7 +14,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    [VIZNoCrash beiginNoCrash];
+//    [VIZNoCrash beiginNoCrash];
+    [VIZNoCrash beiginNoCrashWithBuglyKey:@"dfa01f13db"];
     return YES;
 }
 

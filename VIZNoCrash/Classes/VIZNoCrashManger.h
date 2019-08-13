@@ -57,12 +57,12 @@
 
 
 
-///**
-// 调用bugly
-//
-// @param buglyKey buglyKey
-// */
-//+ (void)startBugly:(NSString *)buglyKey;
+/**
+ 调用bugly
+
+ @param buglyKey buglyKey
+ */
++ (void)startBugly:(NSString *)buglyKey;
 
 /**
  替换未知方法

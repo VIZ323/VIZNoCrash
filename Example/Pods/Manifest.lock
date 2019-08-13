@@ -1,15 +1,22 @@
 PODS:
-  - VIZNoCrash (0.1.0)
+  - Bugly (2.5.0)
+  - VIZNoCrash (0.1.4):
+    - Bugly (~> 2.5.0)
 
 DEPENDENCIES:
   - VIZNoCrash (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Bugly
 
 EXTERNAL SOURCES:
   VIZNoCrash:
     :path: "../"
 
 SPEC CHECKSUMS:
-  VIZNoCrash: 99636a016944c63adc16b9a0771a935de86eae1a
+  Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
+  VIZNoCrash: df2d56417ee8b71ecd670550574d65691f439b4c
 
 PODFILE CHECKSUM: d40a4b91f3730cd9826a5ac1c8f0fb6ce7940bdb
 

@@ -1,6 +1,6 @@
 {
   "name": "VIZNoCrash",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "summary": "A short description of VIZNoCrash.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/VIZ323/VIZNoCrash",
@@ -13,10 +13,15 @@
   },
   "source": {
     "git": "https://github.com/VIZ323/VIZNoCrash.git",
-    "tag": "0.1.0"
+    "tag": "0.1.4"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "VIZNoCrash/Classes/**/*"
+  "source_files": "VIZNoCrash/Classes/**/*",
+  "dependencies": {
+    "Bugly": [
+      "~> 2.5.0"
+    ]
+  }
 }

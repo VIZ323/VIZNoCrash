@@ -15,15 +15,14 @@
 #import "NSString+VIZNoCrash.h"
 #import "NSMutableString+VIZNoCrash.h"
 #import "NSObject+VIZNoCrash.h"
-
 #import "VIZNoCrashManger.m"
 
 @implementation VIZNoCrash
 
-//+ (void)beiginNoCrashWithBuglyKey:(NSString *)buglyKey{
-//    [self beiginNoCrash];
-//    [VIZNoCrashManger startBugly:buglyKey];
-//}
++ (void)beiginNoCrashWithBuglyKey:(NSString *)buglyKey{
+    [self beiginNoCrash];
+    [VIZNoCrashManger startBugly:buglyKey];
+}
 
 
 + (void)noCrashArray{
